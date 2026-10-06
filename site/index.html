@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Révisions Réseaux d’entreprise</title>
+<meta name="description" content="Plateforme d’entraînement : QCM et questions ouvertes sur le cours de Réseaux d’entreprise.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<!--CONTENT-->
+<div class="app" id="app">
+  <header class="topbar">
+    <button class="brand" id="brand" type="button" aria-label="Retour à l’accueil">
+      <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="brand-text">Réseaux d’entreprise <em>Révisions</em></span>
+    </button>
+    <button class="btn btn-ghost btn-sm" id="quit-btn" type="button" hidden>Quitter la session</button>
+  </header>
+
+  <main id="view" class="view" tabindex="-1"></main>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <h2 id="modal-title">Quitter la session ?</h2>
+    <p>Votre progression dans cette session sera perdue.</p>
+    <div class="modal-actions">
+      <button class="btn btn-ghost" id="modal-cancel" type="button">Continuer la session</button>
+      <button class="btn btn-danger" id="modal-confirm" type="button">Quitter</button>
+    </div>
+  </div>
+</div>
+
+<script src="assets/questions.js"></script>
+<script src="assets/quiz-core.js"></script>
+<script src="assets/app.js"></script>
+<!--/CONTENT-->
+</body>
+</html>
