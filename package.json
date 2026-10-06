@@ -1,0 +1,11 @@
+{
+  "name": "revisions-reseaux-entreprise",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Plateforme de révision (QCM et questions ouvertes) pour le cours de Réseaux d'entreprise",
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node --test tests/core.test.js",
+    "test:e2e": "node tests/e2e.mjs"
+  }
+}
